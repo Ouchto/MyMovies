@@ -3,9 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ajouter</title>
+    <link rel="stylesheet" href="ajouter_style.css">
 </head>
 <body>
+    <header>
+        <h1>MyMovies</h1>
+        <ul>
+            <li> <a href="accueil.html">Accueil</a></li>
+            <li><a href="ajouter.html">Ajouter</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="ajouter">
+            <h1>Ajouter une recette</h1>
+            <div  id="allInputs">
+                <div class="gouche">
+                    <div class="group">
+                        <label for="titre" class="text-lab">Titre</label><br>
+                        <input type="text" id="titre" class="item">
+                    </div>
+                    <div class="group">
+                        <label for="Realisateur" class="text-lab">Réalisateur</label><br>
+                        <input type="text" id="Realisateur" class="item">
+                    </div>
+                    <div class="group">
+                        <label for="sortie" class="text-lab">Année de sortie</label><br>
+                        <input type="text" id="sortie" class="item">
+                    </div>
+                    <div class="group">
+                        <label for="Genre" class="text-lab">Genre</label><br>
+                        <select id="Genre"  class="item">
+                            <option value="Action">Action</option>
+                            <option value="fantastique">fantastique</option>
+                            <option value="romantique">romantique</option>
+                            <option value="drama">drama</option>
+                        </select>
+                    </div>
+                    <div class="group">
+                        <label for="Statut" class="text-lab">Statut</label><br>
+                        <select id="Statut"  class="item" >
+                            <option value="Vu">Vu</option>
+                            <option value="à regarder">à regarder</option>
+                            
+                        </select>
+                    </div>
+                    
+                    
+                    
+                </div>
+                <div class="droite">
+                    <div class="group">
+                        <div class="img-conter">
+                                <div class="preview">
+                                    <img src="" alt="" id="file-image">
+                                </div>
+                                <label for="img" id="label-img">Image</label><br>
+                                <input type="file" accept="image/*" id="img" onchange="showPreview(event);">    
+                        </div>
+
+                    </div>
+                    <div class="group">
+                        <label for="description" class="text-lab">Description</label><br>
+                        <textarea class="item" id="description"></textarea>
+                    </div>
+                </div>
+                
+            </div>
+            <button id="btn_ajouter" type="submit">Ajouter</button>
+        </section>
+    </main>
     
+    <script type="text/javascript">
+        function showPreview(event){
+            if(event.target.files.length > 0){
+                var src = URL.createObjectURL(event.target.files[0]);
+                var preview = document.getElementById("file-image");
+                preview.src = src;
+                preview.style.display = "block";
+                preview.style.borderRadius = "10px";
+            }
+        }
+        
+    </script>
 </body>
 </html>
