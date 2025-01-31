@@ -6,7 +6,7 @@
     <title>Ajouter</title>
     <link rel="stylesheet" href="ajouter_style.css">
 </head>
-<body>
+<body onload="Modifier()">
     <header>
         <h1>MyMovies</h1>
         <ul>
@@ -16,7 +16,7 @@
     </header>
     <main>
         <section class="ajouter">
-            <h1>Ajouter une recette</h1>
+            <h1 id="ajouterUnFilm">Ajouter un Film</h1>
             <div  id="allInputs">
                 <div class="gouche">
                     <div class="group">
@@ -70,7 +70,7 @@
                 </div>
                 
             </div>
-            <button id="btn_ajouter" >Ajouter</button>
+            <button id="btnAjouter"  onclick="Ajouter()" type="button">Ajouter</button>
         </section>
     </main>
     <script src="script.js"></script>

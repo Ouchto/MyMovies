@@ -53,17 +53,27 @@ header h1{
 }
 
 img{
-    width: 100%;
-    height: 300px;
+    width: 40%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(62, 180, 212, 0.646), 0 6px 20px 0 rgba(62, 180, 212, 0.646);
+}
+
+.selected{
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    
 }
 
 .details{
+    box-shadow: 0 4px 8px 0 rgba(62, 180, 212, 0.646), 0 6px 20px 0 rgba(62, 180, 212, 0.646);
     background-color: rgb(35, 35, 73);
     display: flex;
-    gap: 40%;
-    width: 90%;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
     padding: 20px;
-    height: 250px;
     border-radius: 20px;
 }
 
@@ -71,6 +81,14 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    gap: 20px;
+    width: 90%;
+    height: 40%;
+}
+
+.gouche h1{
+    text-align: center;
+    font-size: 60px;
 }
 h4{
     color: #b2b6bd;
@@ -79,11 +97,12 @@ h4{
 .droite{
 
     justify-self: center;
-    width: 50%;
+    width: 90%;
+    height: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
 }
 .droite p{
     background: transparent;
@@ -92,4 +111,27 @@ h4{
     border-radius: 10px;
     padding: 10px;
     
+}
+
+#buttons{
+
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+#buttons button{
+    width: 45%;
+    background-color: #0d6666;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    height: 30px;
+    font-size: larger;
+    font-weight: bold;
+    transition: .5s;
+}
+
+#buttons button:hover{
+    background-color: #35bebe;
 }
