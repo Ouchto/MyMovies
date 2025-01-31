@@ -10,7 +10,6 @@ body{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    height: 700px;
 }
 
 header{
@@ -54,7 +53,6 @@ header h1{
 
 
 main{
-    height: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -183,11 +181,7 @@ select option{
     font-size: medium;
     padding: 0px 0px 0px 10px;
 }
-.group select{
 
-    width: 360px;
-
-}
 
 button{
     background-color: #3EDDDD;
@@ -201,4 +195,40 @@ button{
     cursor: pointer;
 
     
+}
+
+
+@media (max-width: 1198px) {
+
+    section{
+        width: 100%;
+    }
+}
+
+@media (max-width: 844px) {
+
+    #allInputs{
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 706px) {
+
+    .droite{
+        width: 40%;
+    }
+    .gouche{
+        width: 40%;
+    }
+}
+
+@media (max-width: 415) {
+    ul li a{
+        font-size: small;
+
+    }
+    header h1{
+        font-size: large;
+    }
 }
