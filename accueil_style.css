@@ -119,6 +119,7 @@ header h1 {
 #card h3 {
   text-align: center;
   color: white;
+  font-size: 25px;
   font-weight: bold;
   cursor: pointer;
 }
@@ -132,22 +133,36 @@ header h1 {
   height: 50px;
 }
 
-@media (max-width: 1037px) {
+
+
+
+@media (max-width: 1158px) {
+  
   #tbody {
     justify-content: space-around;
   }
-  #card {
-    width: 20%;
+
+    .div {
+    width: 30%;
   }
 }
 
-@media (max-width: 660px) {
+@media (max-width: 698px) {
   #tbody {
-    justify-content: space-between;
+    justify-content: space-around;
+    
   }
-  #card {
-    width: 30%;
+  .div {
+    width: 40%;
   }
+
+
+
+}
+
+@media (max-width: 520px) {
+
+
   ul li a {
     font-size: medium;
   }
@@ -155,20 +170,12 @@ header h1 {
   header h1 {
     font-size: large;
   }
-}
-
-@media (max-width: 660px) {
+  .div {
+    width: 100%;
+  }
   #tbody {
-    gap: 10px;
-  }
-  #card {
-    width: 45%;
-  }
-  ul li a {
-    font-size: smaller;
+    padding: 10%;
+    
   }
 
-  header h1 {
-    font-size: medium;
-  }
 }
