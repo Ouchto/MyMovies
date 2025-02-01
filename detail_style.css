@@ -130,3 +130,15 @@ h4 {
 #buttons button:hover {
   background-color: #35bebe;
 }
+
+@media (max-width: 953px ) {
+  .gouche h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 672px ) {
+  .gouche h1 {
+    font-size: 30px;
+  }
+}
